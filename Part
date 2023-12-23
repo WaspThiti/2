@@ -1,0 +1,15 @@
+do
+    local NM = game:GetService("Workspace").Part
+    if NM then
+        NM:Destroy()
+    end
+end
+function Part()
+    local Part = Instance.new("Part",Workspace)
+    Part.Name = "Part"
+    Part.Cancollide = true
+    Part.Anchored = true
+    Part.Transparency = 0
+    Part.Size = Vactor3.new(30,-5,30)
+    Part.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-5,0)
+end
